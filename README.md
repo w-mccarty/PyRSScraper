@@ -42,24 +42,24 @@ from https://old.reddit.com/r/news/hot/ = /var/www/html/feeds/redditrnewshot.htm
 Jquery code to add html to webpage and format css by the last hour/day/older:
 ```
   
-  var rmonth = moment().format('M');
-	var rday = moment().format('D');
-	var rtoday = moment().format(rmonth + "-" + rday);
-	var rtom = (parseInt(rday) + 1);
-	var rtomi = rtom.toString();
-	var rtomf = moment().format(rmonth + "-" + rtomi);
-	var ryest = moment().format(rmonth + "-" + (rday - 1));
-	$("<style type='text/css'> #rl"+ rtoday +"{color:#b8ffcb; } </style>").appendTo("head");
-	$("<style type='text/css'> #rl"+ rtoday +" a:link {color:#b8ffcb;} </style>").appendTo("head");
-	$("<style type='text/css'> #rl"+ rtoday +" a:visited {color:#002914;} </style>").appendTo("head");
-	$("<style type='text/css'> #rl"+ rtoday +" a:hover {color:white; text-decoration: underline;}</style>").appendTo("head");
-	$("<style type='text/css'> #rn"+ rtoday +"{color:#6bff93;} </style>").appendTo("head");
-	$("<style type='text/css'> #rn"+ rtoday +" a:link {color:#6bff93;} </style>").appendTo("head");
-	$("<style type='text/css'> #rn"+ rtoday +" a:visited {color:#002914;} </style>").appendTo("head");
-	$("<style type='text/css'> #rn"+ rtoday +" a:hover {color:white; text-decoration: underline;}</style>").appendTo("head");
-	$("<style type='text/css'> #rl"+ rtomf +"{color:#6bff93;} </style>").appendTo("head");
-	$("<style type='text/css'> #rl"+ rtomf +" a:link {color:#6bff93;} </style>").appendTo("head");
-	$("<style type='text/css'> #rl"+ rtomf +" a:visited {color:#002914;} </style>").appendTo("head");
-	$("<style type='text/css'> #rl"+ rtomf +" a:hover {color:white; text-decoration: underline;}</style>").appendTo("head");
-  $("#rss-feeds").load("feeds/redditrnewshot.html");
+var rmonth = moment().format('M');
+var rday = moment().format('D');
+var rtoday = moment().format(rmonth + "-" + rday);
+var rtom = (parseInt(rday) + 1);
+var rtomi = rtom.toString();
+var rtomf = moment().format(rmonth + "-" + rtomi);
+var ryest = moment().format(rmonth + "-" + (rday - 1));
+$("<style type='text/css'> #rl"+ rtoday +"{color:#b8ffcb; } </style>").appendTo("head");
+$("<style type='text/css'> #rl"+ rtoday +" a:link {color:#b8ffcb;} </style>").appendTo("head");
+$("<style type='text/css'> #rl"+ rtoday +" a:visited {color:#002914;} </style>").appendTo("head");
+$("<style type='text/css'> #rl"+ rtoday +" a:hover {color:white; text-decoration: underline;}</style>").appendTo("head");
+$("<style type='text/css'> #rn"+ rtoday +"{color:#6bff93;} </style>").appendTo("head");
+$("<style type='text/css'> #rn"+ rtoday +" a:link {color:#6bff93;} </style>").appendTo("head");
+$("<style type='text/css'> #rn"+ rtoday +" a:visited {color:#002914;} </style>").appendTo("head");
+$("<style type='text/css'> #rn"+ rtoday +" a:hover {color:white; text-decoration: underline;}</style>").appendTo("head");
+$("<style type='text/css'> #rl"+ rtomf +"{color:#6bff93;} </style>").appendTo("head");
+$("<style type='text/css'> #rl"+ rtomf +" a:link {color:#6bff93;} </style>").appendTo("head");
+$("<style type='text/css'> #rl"+ rtomf +" a:visited {color:#002914;} </style>").appendTo("head");
+$("<style type='text/css'> #rl"+ rtomf +" a:hover {color:white; text-decoration: underline;}</style>").appendTo("head");
+$("#rss-feeds").load("feeds/redditrnewshot.html");
 ```
