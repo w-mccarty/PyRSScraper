@@ -1,5 +1,5 @@
 # PyRSScraper
-RSS scraper with pre-tagged html output designed to be easily formatted and embedded
+RSS scraper with pre-tagged html output designed to be easily formatted, e
 
 
 **Requires:
