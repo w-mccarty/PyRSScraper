@@ -13,7 +13,7 @@ Eventlet - https://pypi.org/project/eventlet/
 spits out html in the following format:
 
 redditrnewshot.html
-'''
+```
 <div id="rssheadlink">https://www.reddit.com/r/news/hot.rss</div><div id="rssheadupdate">Last updated: 12:03,11-22-2021</div><div id="11-22-16-51-22" class="rssdi$
 <div id="11-22-16-48-50" class="rssdiv"><div class="rssdate" id="rn11-22">11-22 16:48</div><div class="rsslink" id="rn11-22"><a href="https://www.reddit.com/r/new$
 <div id="11-22-16-35-11" class="rssdiv"><div class="rssdate" id="rn11-22">11-22 16:35</div><div class="rsslink" id="rn11-22"><a href="https://www.reddit.com/r/new$
@@ -33,4 +33,4 @@ redditrnewshot.html
 <div id="11-22-00-05-22" class="rssdiv"><div class="rssdate" id="rl11-22">11-22 00:05</div><div class="rsslink" id="rl11-22"><a href="https://www.reddit.com/r/new$
 <div id="11-22-00-04-13" class="rssdiv"><div class="rssdate" id="rl11-22">11-22 00:04</div><div class="rsslink" id="rl11-22"><a href="https://www.reddit.com/r/new$
 <div id="11-21-23-17-56" class="rssdiv"><div class="rssdate" id="rl11-21">11-21 23:17</div><div class="rsslink" id="rl11-21"><a href="https://www.reddit.com/r/new$
-'''
+```
