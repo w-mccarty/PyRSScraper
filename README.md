@@ -1,18 +1,19 @@
 # PyRSScraper
-RSS scraper with formatting for html output
+RSS scraper with pre-tagged html output designed to be easily formatted and embedded
 
 
-Requires:
+**Requires:
 
 Feedparser - https://pypi.org/project/feedparser/
 Unidecode - https://pypi.org/project/Unidecode/
 Eventlet - https://pypi.org/project/eventlet/
+```
+mkdir /var/www/html/feeds/
+```
 
+**spits out html in the following format:
 
-
-spits out html in the following format:
-
-from https://old.reddit.com/r/news/hot/ = **redditrnewshot.html**
+from https://old.reddit.com/r/news/hot/ = redditrnewshot.html
 ```
 <div id="rssheadlink">https://www.reddit.com/r/news/hot.rss</div><div id="rssheadupdate">Last updated: 12:03,11-22-2021</div><div id="11-22-16-51-22" class="rssdiv"><div class="rssdate" id="rn11-22">11-22 16:51</div><div class="rsslink" id="rn11-22"><a href="https://www.reddit.com/r/news/comments/qzpto6/those_who_died_were_extremely_passionate_grannies/" target="_blank">Those who died were extremely passionate grannies': Milwaukee Dancing Grannies 'devastated' by loss of life in Christmas parade</a></div><br></div>
 <div id="11-22-16-48-50" class="rssdiv"><div class="rssdate" id="rn11-22">11-22 16:48</div><div class="rsslink" id="rn11-22"><a href="https://www.reddit.com/r/news/comments/qzprkv/mobs_of_looters_target_bay_area_retailers_for/" target="_blank">Mobs of looters target Bay Area retailers for third straight day</a></div><br></div>
