@@ -39,3 +39,27 @@ from https://old.reddit.com/r/news/hot/ = /var/www/html/feeds/redditrnewshot.htm
 <div id="11-21-15-34-02" class="rssdiv"><div class="rssdate" id="rl11-21">11-21 15:34</div><div class="rsslink" id="rl11-21"><a href="https://www.reddit.com/r/news/comments/qyxdsd/video_9yearold_florida_girl_fights_off_suspected/" target="_blank">VIDEO: 9-year-old Florida girl fights off suspected robber to protect mom</a></div><br></div>
 <div id="11-21-15-13-37" class="rssdiv"><div class="rssdate" id="rl11-21">11-21 15:13</div><div class="rsslink" id="rl11-21"><a href="https://www.reddit.com/r/news/comments/qywyvi/tesla_electric_suvs_get_poor_scores_from_consumer/" target="_blank">Tesla, electric SUVs get poor scores from Consumer Reports</a></div><br></div>
 ```
+Jquery code to add html to webpage and format css by the last hour/day/older:
+```
+  
+  var rmonth = moment().format('M');
+	var rday = moment().format('D');
+	var rtoday = moment().format(rmonth + "-" + rday);
+	var rtom = (parseInt(rday) + 1);
+	var rtomi = rtom.toString();
+	var rtomf = moment().format(rmonth + "-" + rtomi);
+	var ryest = moment().format(rmonth + "-" + (rday - 1));
+	$("<style type='text/css'> #rl"+ rtoday +"{color:#b8ffcb; } </style>").appendTo("head");
+	$("<style type='text/css'> #rl"+ rtoday +" a:link {color:#b8ffcb;} </style>").appendTo("head");
+	$("<style type='text/css'> #rl"+ rtoday +" a:visited {color:#002914;} </style>").appendTo("head");
+	$("<style type='text/css'> #rl"+ rtoday +" a:hover {color:white; text-decoration: underline;}</style>").appendTo("head");
+	$("<style type='text/css'> #rn"+ rtoday +"{color:#6bff93;} </style>").appendTo("head");
+	$("<style type='text/css'> #rn"+ rtoday +" a:link {color:#6bff93;} </style>").appendTo("head");
+	$("<style type='text/css'> #rn"+ rtoday +" a:visited {color:#002914;} </style>").appendTo("head");
+	$("<style type='text/css'> #rn"+ rtoday +" a:hover {color:white; text-decoration: underline;}</style>").appendTo("head");
+	$("<style type='text/css'> #rl"+ rtomf +"{color:#6bff93;} </style>").appendTo("head");
+	$("<style type='text/css'> #rl"+ rtomf +" a:link {color:#6bff93;} </style>").appendTo("head");
+	$("<style type='text/css'> #rl"+ rtomf +" a:visited {color:#002914;} </style>").appendTo("head");
+	$("<style type='text/css'> #rl"+ rtomf +" a:hover {color:white; text-decoration: underline;}</style>").appendTo("head");
+  $("#rss-feeds").load("feeds/redditrnewshot.html");
+```
