@@ -4,12 +4,10 @@ RSS scraper with pre-tagged html output designed to be easily formatted and embe
 
 **Requires:
 
-Feedparser - https://pypi.org/project/feedparser/
-Unidecode - https://pypi.org/project/Unidecode/
-Eventlet - https://pypi.org/project/eventlet/
-```
-mkdir /var/www/html/feeds/
-```
+- Feedparser - https://pypi.org/project/feedparser/
+- Unidecode - https://pypi.org/project/Unidecode/
+- Eventlet - https://pypi.org/project/eventlet/
+- ```mkdir /var/www/html/feeds/```
 
 **spits out html in the following format:
 
